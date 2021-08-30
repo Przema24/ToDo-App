@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List App</title>
+
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+    <div class="navigation">
+        <a href="/first-page.html">Link to first page</a>
+        <a href="/second-page.html">Link to second page</a>
+        <a href="/third-page.html">Link to third page</a>
+    </div>
+
+    <div class="header">
+        <h1>To Do list web application</h1>
+    </div>
+
+    <div class="row">
+        <div class="column sidebar">
+            <h2>First sidebar</h2>
+            <p>Here could be latest blog posts, for example</p>
+        </div>
+    
+        <div class="column middle">
+            <header>
+                <h2>ToDo list</h2>
+    
+                <!-- input to write a task to do -->
+                <input type="text" 
+                placeholder="Type a task to do and press enter" 
+                name="task" 
+                id="task">
+    
+            </header>
+    
+            <!-- list of task -->
+            <ul id="tasks-list"></ul>
+            <!-- <ul>
+                <li class="ready">
+                    First tasks
+                    <div class="buttons">
+                        <button class="complete"></button>
+                        <button class="remove"></button>
+                    </div>
+                </li>
+                <li>
+                    Second tasks
+                    <div class="buttons">
+                        <button class="complete"></button>
+                        <button class="remove"></button>
+                    </div>
+                </li>
+                <li>
+                    Third tasks
+                    <div class="buttons">
+                        <button class="complete"></button>
+                        <button class="remove"></button>
+                    </div>
+                </li>
+            </ul> -->
+            <div id="bottom"></div>
+        </div>
+    
+        <div class="column sidebar">
+            <h2>Second sidebar</h2>
+            <p>Here could be posts categories, for example</p>
+        </div>
+    </div>
+
+
+
+    <div style="clear:both;"></div>
+
+    <div class="footer">
+        <p>Footer &copy; Company name</p>
+    </div>
+
+    
+    <script src="/public/js/tasks-list.js"></script>
+    <script type="module" src="/public/js/new-task.js"></script>
+    <script type="module" src="/public/js/update-task.js"></script>
+    <script type="module" src="/public/js/delete-task.js"></script>
+</body>
+</html>
